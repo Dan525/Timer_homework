@@ -18,13 +18,24 @@
         app:layout_constraintBottom_toBottomOf="parent"
         />
     <Button
-        android:id="@+id/btn_start_stop"
-        android:text="@string/start"
+        android:id="@+id/btn_set_timer"
+        android:text="@string/set_timer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/timer"
+        app:layout_constraintRight_toLeftOf="@id/btn_start_stop"
+
+        />
+    <Button
+        android:id="@+id/btn_start_stop"
+        android:text="@string/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        app:layout_constraintLeft_toRightOf="@id/btn_set_timer"
         app:layout_constraintTop_toBottomOf="@id/timer"
         app:layout_constraintRight_toLeftOf="@id/btn_reset"
         />

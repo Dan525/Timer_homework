@@ -1,7 +1,11 @@
 <resources>
     <string name="app_name">TechnoTimer</string>
 
-    <string name="reset">reset</string>
-    <string name="start">start</string>
-    <string name="stop">stop</string>
+    <string name="reset">Reset</string>
+    <string name="start">Start</string>
+    <string name="cont">Continue</string>
+    <string name="pause">Pause</string>
+    <string name="confirm_time">Set</string>
+    <string name="cancel_time">Cancel</string>
+    <string name="set_timer">Set Timer</string>
 </resources>

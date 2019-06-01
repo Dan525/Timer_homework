@@ -1,0 +1,52 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <NumberPicker
+        android:id="@+id/minutes_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/seconds_picker"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <NumberPicker
+        android:id="@+id/seconds_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/minutes_picker"
+        app:layout_constraintEnd_toStartOf="@id/millis_picker"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <NumberPicker
+        android:id="@+id/millis_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/seconds_picker"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/set_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/minutes_picker"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/cancel_button"
+        android:layout_marginTop="30dp"
+        android:text="@string/confirm_time"
+        />
+
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/minutes_picker"
+        app:layout_constraintStart_toEndOf="@id/set_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        android:text="@string/cancel_time"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
